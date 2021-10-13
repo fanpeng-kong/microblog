@@ -12,5 +12,6 @@ class Config(object):
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['fanpeng@fanpengkong.com']
-    POSTS_PER_PAGE = 5
+    POSTS_PER_PAGE = 20
     LANGUAGES = ['en', 'zh']
+    MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')

@@ -1,2 +1,3 @@
 FLASK_APP=microblog.py
 FLASK_ENV=development
+MS_TRANSLATOR_KEY=a4a9d7243fd94c969d7a7b00355b3655
