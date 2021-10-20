@@ -10,6 +10,7 @@ from flask_babel import lazy_gettext as _l
 import os
 import logging
 from logging.handlers import SMTPHandler, RotatingFileHandler
+from elasticsearch import Elasticsearch
 from config import Config
 
 
@@ -29,6 +30,9 @@ def create_app(config_class=Config):
     app.config.from_object(config_class)
     app.config['TEMPLATES_AUTO_RELOAD'] = True
     app.jinja_env.auto_reload = True
+
+    app.elasticsearch = Elasticsearch([app.config['ELASTICSEARCH_URL']]) \
+        if app.config['ELASTICSEARCH_URL'] else None
 
     db.init_app(app)
     migrate.init_app(app, db)
