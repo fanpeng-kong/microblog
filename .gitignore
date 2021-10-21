@@ -41,6 +41,8 @@ venv
 app.db
 microblog.log*
 
+certs/
+
 .env
 
 .vagrant/
