@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-10-25 23:26+1100\n"
+"POT-Creation-Date: 2021-10-30 00:41+1100\n"
 "PO-Revision-Date: 2021-10-08 18:08+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: app/__init__.py:21
+#: app/__init__.py:23
 msgid "Please login to access this page."
 msgstr "请登陆访问此页"
 
@@ -161,14 +161,22 @@ msgstr "您没有关注 %(username)s"
 msgid "Explore"
 msgstr "探索"
 
-#: app/main/routes.py:178
+#: app/main/routes.py:179
 #, fuzzy
 msgid "Your message has been sent."
 msgstr "您的密码已重置"
 
-#: app/main/routes.py:180
+#: app/main/routes.py:181
 msgid "Send Message"
 msgstr "发送消息"
+
+#: app/main/routes.py:220
+msgid "An export task is currently in progress"
+msgstr "当前正在执行导出任务"
+
+#: app/main/routes.py:222
+msgid "Exporting posts..."
+msgstr "正在导出帖子..."
 
 #: app/templates/_post.html:16
 #, python-format
@@ -191,19 +199,19 @@ msgstr "主页"
 msgid "Login"
 msgstr "登陆"
 
-#: app/templates/base.html:37 app/templates/messages.html:4
+#: app/templates/base.html:39 app/templates/messages.html:4
 msgid "Messages"
 msgstr "消息"
 
-#: app/templates/base.html:38
+#: app/templates/base.html:48
 msgid "Profile"
 msgstr "个人资料"
 
-#: app/templates/base.html:39
+#: app/templates/base.html:49
 msgid "Logout"
 msgstr "登出"
 
-#: app/templates/base.html:76
+#: app/templates/base.html:98
 msgid "Error: Could not contact server."
 msgstr "错误：无法联系服务器。"
 
@@ -212,11 +220,11 @@ msgstr "错误：无法联系服务器。"
 msgid "Hi, %(username)s!"
 msgstr "嗨， %(username)s！"
 
-#: app/templates/index.html:17 app/templates/user.html:42
+#: app/templates/index.html:17 app/templates/user.html:45
 msgid "Newer posts"
 msgstr "较新的帖子"
 
-#: app/templates/index.html:22 app/templates/user.html:47
+#: app/templates/index.html:22 app/templates/user.html:50
 msgid "Older posts"
 msgstr "较旧的帖子"
 
@@ -267,15 +275,19 @@ msgstr "关注 %(count)d 个"
 msgid "Edit your profile"
 msgstr "编辑您的个人资料"
 
-#: app/templates/user.html:18 app/templates/user_popup.html:22
+#: app/templates/user.html:15
+msgid "Export your posts"
+msgstr "导出您的帖子"
+
+#: app/templates/user.html:21 app/templates/user_popup.html:22
 msgid "Follow"
 msgstr "关注"
 
-#: app/templates/user.html:25 app/templates/user_popup.html:29
+#: app/templates/user.html:28 app/templates/user_popup.html:29
 msgid "Unfollow"
 msgstr "取消关注"
 
-#: app/templates/user.html:30
+#: app/templates/user.html:33
 msgid "Send private message"
 msgstr "发送私信"
 
