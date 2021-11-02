@@ -85,6 +85,7 @@
   {{ super() }}
   {{ moment.include_moment() }}
   {{ moment.lang(g.locale) }}
+  {{ pagedown.include_pagedown() }}
   <script>
    function translate(sourceElem, destElem, sourceLang, destLang) {
      $(destElem).html('<img src="{{ url_for('static', filename='loading.gif') }}">');

@@ -7,6 +7,8 @@ from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_babel import Babel
 from flask_babel import lazy_gettext as _l
+from flask_pagedown import PageDown
+from flaskext.markdown import Markdown
 import os
 import logging
 from logging.handlers import SMTPHandler, RotatingFileHandler
@@ -25,6 +27,7 @@ mail = Mail()
 bootstrap = Bootstrap()
 moment = Moment()
 babel = Babel()
+pagedown = PageDown()
 
 
 def create_app(config_class=Config):
@@ -45,6 +48,9 @@ def create_app(config_class=Config):
     bootstrap.init_app(app)
     moment.init_app(app)
     babel.init_app(app)
+    pagedown.init_app(app)
+
+    Markdown(app)
 
     from app.errors import bp as errors_bp
     app.register_blueprint(errors_bp)

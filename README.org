@@ -49,25 +49,27 @@ sudo apt install -y redis-server
    -  Automated language detection and translation
    -  and more!
    
-* TODOs
-  Following is a list of features that I would like to add to the microblog application:
+** TODOs
+   Following is a list of features that I would like to add to the microblog application:
 
-** Post
-*** TODO Add post title
-*** TODO Add delete
-*** TODO Add Markdown support
-*** TODO Add image support
-*** TODO Add tags support
-** User
-*** TODO Add user display name (currently same as username)
-** Route
-*** TODO Add url prefix
-** Messages
-*** TODO Add threaded message
-** APIs
-*** TODO Post API
-*** TODO Email API
-*** TODO Message API
-** Deployment
-*** TODO Enable =https= to various subdomains
+*** Post
+**** TODO Add post title
+**** TODO Add delete
+**** DONE Add Markdown support
+**** TODO Add image support
+**** TODO Add tags support
+**** TODO Post preview template
+**** TODO Separate post management (create, edit, delete etc.)
+*** User
+**** TODO Add user display name (currently same as username)
+*** Route
+**** TODO Add url prefix
+*** Messages
+**** TODO Add threaded message
+*** APIs
+**** TODO Post API
+**** TODO Email API
+**** TODO Message API
+*** Deployment
+**** TODO Enable =https= to various subdomains
 
