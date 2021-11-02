@@ -45,3 +45,4 @@ certs
 .vagrant
 .env
 
+*.credential*

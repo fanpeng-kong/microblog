@@ -1,0 +1,73 @@
+* Welcome to Microblog!
+This microblog application is built on top of the microblogging application featured in the [[https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world][Flask Mega-Tutorial]] from Miguel Grinberg and extended to include new features that are often needed for practical blogging platform.
+
+** Quick Start
+
+- download the repo:
+
+#+BEGIN_SRC bash
+git clone https://github.com/fanpeng-kong/microblog.git
+#+END_SRC
+
+- create virtual environment and install required Python packages:
+
+#+BEGIN_SRC bash
+cd path-to-your-microblog/microblog
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+#+END_SRC
+
+- install other packages used in the project (on Linux):
+
+#+BEGIN_SRC bash
+curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+sudo apt update
+sudo apt install elasticsearch
+#+END_SRC
+
+#+BEGIN_SRC bash
+sudo apt install -y redis-server
+#+END_SRC
+
+** Deployment
+
+   The website is deployed in [[https://aws.amazon.com/lightsail/][Lightsail]] running Ubuntu 20.04 on AWS. For deployment instructions, please check [[https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvii-deployment-on-linux][Chapter 17: Deployment on Linux]] in The Flask Mega-Tutorial series.
+
+** Original Features
+   The excellent 23 chapters Flask Mega-Tutorial written by Miguel Grinberg teaches you how to build a microblogging application and it covers a long list of topics including:
+
+   -  New user registration
+   -  User authentication and login
+   -  Writing blog posts
+   -  Followers
+   -  User timelines
+   -  Text search
+   -  Profile pages
+   -  Internationalization
+   -  Automated language detection and translation
+   -  and more!
+   
+* TODOs
+  Following is a list of features that I would like to add to the microblog application:
+
+** Post
+*** TODO Add post title
+*** TODO Add delete
+*** TODO Add Markdown support
+*** TODO Add image support
+*** TODO Add tags support
+** User
+*** TODO Add user display name (currently same as username)
+** Route
+*** TODO Add url prefix
+** Messages
+*** TODO Add threaded message
+** APIs
+*** TODO Post API
+*** TODO Email API
+*** TODO Message API
+** Deployment
+*** TODO Enable =https= to various subdomains
+
