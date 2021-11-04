@@ -52,24 +52,24 @@ sudo apt install -y redis-server
 ** TODOs
    Following is a list of features that I would like to add to the microblog application:
 
-*** Post
-**** TODO Add post title
-**** TODO Add delete
-**** DONE Add Markdown support
-**** TODO Add image support
-**** TODO Add tags support
-**** TODO Post preview template
-**** TODO Separate post management (create, edit, delete etc.)
-*** User
-**** TODO Add user display name (currently same as username)
-*** Route
-**** TODO Add url prefix
-*** Messages
-**** TODO Add threaded message
-*** APIs
-**** TODO Post API
-**** TODO Email API
-**** TODO Message API
-*** Deployment
-**** TODO Enable =https= to various subdomains
+*** Post [1/7]
+    - [ ] Add post title
+    - [ ] Add delete
+    - [X] Add Markdown support
+    - [ ] Add image support
+    - [ ] Add tags support
+    - [ ] Post preview template
+    - [ ] Separate post management (create, edit, delete etc.)
+*** User [/]
+    - [ ] Add user display name (currently same as username)
+*** Route [/]
+    - [ ] Add url prefix
+*** Messages [/]
+    - [ ] Add threaded message
+*** APIs [/]
+    - [ ] Post API
+    - [ ] Email API
+    - [ ] Message API
+*** Deployment [/]
+    - [ ] Enable =https= to various subdomains
 
